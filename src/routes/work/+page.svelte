@@ -270,7 +270,7 @@
   import Lightbox from './Lightbox.svelte'
 </script>
 
-<div class="mx-auto max-w-2xl text-center">
+<div class="mx-auto max-w-3xl text-center">
   <h1>work</h1>
 
   <div class="flex flex-col justify-center text-left">
