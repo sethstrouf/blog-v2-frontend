@@ -4,8 +4,12 @@
   import Footer from "./Footer.svelte";
 </script>
 
-<NavigationBar />
+<div class="flex flex-col h-screen justify-between">
+  <NavigationBar />
 
-<slot />
+  <main class="mb-auto bg-white py-20">
+    <slot />
+  </main>
 
-<Footer />
+  <Footer />
+</div>

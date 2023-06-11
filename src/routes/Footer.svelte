@@ -24,6 +24,6 @@
         </svg>
       </a>
     </div>
-    <p class="mt-6 text-center text-xs leading-5 text-gray-500">&copy; {currentYear} <a href="https://sethstrouf.com" target="_blank" class="hover:text-gray-700">Seth Strouf</a></p>
+    <p class="mt-6 text-center text-xs leading-5 text-gray-500"><a href="https://sethstrouf.com" target="_blank">&copy; {currentYear} Seth Strouf</a></p>
   </div>
 </footer>
