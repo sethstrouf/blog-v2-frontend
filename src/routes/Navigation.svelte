@@ -7,8 +7,11 @@
 <nav class="bg-white shadow">
   <!-- Non-Mobile menu -->
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="flex sm:h-16 justify-center">
-      <div class="flex">
+    <div class="flex sm:h-16 w-full justify-center">
+      <div class="flex items-center sm:space-x-16 md:space-x-38 lg:space-x-60">
+        <div>
+          <h1 class="hidden sm:block text-2xl md:text-4xl"><a href="/">hannah bauer</a></h1>
+        </div>
         <div class="sm:-mb-0.5 hidden sm:flex sm:space-x-8 flex-wrap">
           <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
           <a href="/hello" aria-current={path === '/hello' && 'page'} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base lg:text-lg font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">hello</a>
