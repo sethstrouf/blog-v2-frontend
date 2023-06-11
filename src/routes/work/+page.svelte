@@ -3,222 +3,355 @@
   import eventMarketing2 from '$lib/images/eventmarketing2.png'
   import eventMarketing3 from '$lib/images/eventmarketing3.jpg'
   import eventMarketing4 from '$lib/images/eventmarketing4.png'
+
+  const eventMarketingImages = [
+    {
+      id: 1,
+      src: eventMarketing1,
+      alt: 'Hudl Event Marketing 1',
+    },
+    {
+      id: 2,
+      src: eventMarketing2,
+      alt: 'Hudl Event Marketing 2',
+    },
+    {
+      id: 3,
+      src: eventMarketing3,
+      alt: 'Hudl Event Marketing 3',
+    },
+    {
+      id: 4,
+      src: eventMarketing4,
+      alt: 'Hudl Event Marketing 4',
+    }
+  ]
+
   import productMarketing1 from '$lib/images/productmarketing1.png'
   import productMarketing2 from '$lib/images/productmarketing2.jpg'
   import productMarketing3 from '$lib/images/productmarketing3.jpg'
   import productMarketing4 from '$lib/images/productmarketing4.png'
+
+  const productMarketingImages = [
+    {
+      id: 5,
+      src: productMarketing1,
+      alt: 'Hudl Product Marketing 1',
+    },
+    {
+      id: 6,
+      src: productMarketing2,
+      alt: 'Hudl Product Marketing 2',
+    },
+    {
+      id: 7,
+      src: productMarketing3,
+      alt: 'Hudl Product Marketing 3',
+    },
+    {
+      id: 8,
+      src: productMarketing4,
+      alt: 'Hudl Product Marketing 4',
+    }
+  ]
+
   import papillionSanitation1 from '$lib/images/videothumbnail1.jpg'
   import papillionSanitation2 from '$lib/images/yourpart1.jpg'
   import papillionSanitation3 from '$lib/images/videothumbnail2.jpg'
   import papillionSanitation4 from '$lib/images/yourpart2.png'
+
+  const papillionSanitationImages = [
+    {
+      id: 9,
+      src: papillionSanitation1,
+      alt: 'Papillion Sanitation 1',
+    },
+    {
+      id: 10,
+      src: papillionSanitation2,
+      alt: 'Papillion Sanitation 2',
+    },
+    {
+      id: 11,
+      src: papillionSanitation3,
+      alt: 'Papillion Sanitation 3',
+    },
+    {
+      id: 12,
+      src: papillionSanitation4,
+      alt: 'Papillion Sanitation 4',
+    }
+  ]
+
   import paymentSpring1 from '$lib/images/spring1.png'
   import paymentSpring2 from '$lib/images/spring2.png'
   import paymentSpring3 from '$lib/images/spring3.jpg'
   import paymentSpring4 from '$lib/images/spring4.png'
-  import firespring1 from '$lib/images/firespring1.png'
-  import firespring2 from '$lib/images/firespring2.png'
-  import firespring3 from '$lib/images/firespring3.png'
-  import firespring4 from '$lib/images/firespring4.png'
-  import firespring5 from '$lib/images/firespring5.png'
+
+  const paymentSpringImages = [
+    {
+      id: 13,
+      src: paymentSpring1,
+      alt: 'Payment Spring 1',
+    },
+    {
+      id: 14,
+      src: paymentSpring2,
+      alt: 'Payment Spring 2',
+    },
+    {
+      id: 15,
+      src: paymentSpring3,
+      alt: 'Payment Spring 3',
+    },
+    {
+      id: 16,
+      src: paymentSpring4,
+      alt: 'Payment Spring 4',
+    }
+  ]
+
+  import firespringWebsite1 from '$lib/images/firespring1.png'
+  import firespringWebsite2 from '$lib/images/firespring2.png'
+  import firespringWebsite3 from '$lib/images/firespring3.png'
+  import firespringWebsite4 from '$lib/images/firespring4.png'
+  import firespringWebsite5 from '$lib/images/firespring5.png'
+
+  const firespringWebsiteImages = [
+    {
+      id: 17,
+      src: firespringWebsite1,
+      alt: 'Firespring Website 1',
+    },
+    {
+      id: 18,
+      src: firespringWebsite2,
+      alt: 'Firespring Website 2',
+    },
+    {
+      id: 19,
+      src: firespringWebsite3,
+      alt: 'Firespring Website 3',
+    },
+    {
+      id: 20,
+      src: firespringWebsite4,
+      alt: 'Firespring Website 4',
+    },
+    {
+      id: 21,
+      src: firespringWebsite5,
+      alt: 'Firespring Website 5',
+    }
+  ]
+
   import stateMuseum1 from '$lib/images/directmailer1.png'
   import stateMuseum2 from '$lib/images/directmailer2.png'
+
+  const stateMuseumImages = [
+    {
+      id: 22,
+      src: stateMuseum1,
+      alt: 'State Museum 1',
+    },
+    {
+      id: 23,
+      src: stateMuseum2,
+      alt: 'State Museum 2',
+    }
+  ]
+
   import sandwichCampaign1 from '$lib/images/sandwich1.png'
   import sandwichCampaign2 from '$lib/images/sandwich2.jpg'
   import sandwichCampaign3 from '$lib/images/sandwich3.jpg'
   import sandwichCampaign4 from '$lib/images/sandwich4.jpg'
+
+  const sandwichCampaignImages = [
+    {
+      id: 24,
+      src: sandwichCampaign1,
+      alt: 'Sandwich Campaign 1',
+    },
+    {
+      id: 25,
+      src: sandwichCampaign2,
+      alt: 'Sandwich Campaign 2',
+    },
+    {
+      id: 26,
+      src: sandwichCampaign3,
+      alt: 'Sandwich Campaign 3',
+    },
+    {
+      id: 27,
+      src: sandwichCampaign4,
+      alt: 'Sandwich Campaign 4',
+    }
+  ]
+
   import vikingCylinders1 from '$lib/images/exchange1.png'
   import vikingCylinders2 from '$lib/images/exchange2.png'
   import vikingCylinders3 from '$lib/images/exchange3.png'
   import vikingCylinders4 from '$lib/images/exchange4.png'
+
+  const vikingCylindersImages = [
+    {
+      id: 28,
+      src: vikingCylinders1,
+      alt: 'Viking Cyclinders 1',
+    },
+    {
+      id: 29,
+      src: vikingCylinders2,
+      alt: 'Viking Cyclinders 2',
+    },
+    {
+      id: 30,
+      src: vikingCylinders3,
+      alt: 'Viking Cyclinders 3',
+    },
+    {
+      id: 31,
+      src: vikingCylinders4,
+      alt: 'Viking Cyclinders 4',
+    }
+  ]
+
   import holidayGreetings1 from '$lib/images/greeting1.jpg'
   import holidayGreetings2 from '$lib/images/videothumbnail3.jpg'
   import holidayGreetings3 from '$lib/images/greeting2.png'
   import holidayGreetings4 from '$lib/images/greeting3.png'
+
+  const holidayGreetingsImages = [
+    {
+      id: 32,
+      src: holidayGreetings1,
+      alt: 'Holiday Greetings 1',
+    },
+    {
+      id: 33,
+      src: holidayGreetings2,
+      alt: 'Holiday Greetings 2',
+    },
+    {
+      id: 34,
+      src: holidayGreetings3,
+      alt: 'Holiday Greetings 3',
+    },
+    {
+      id: 35,
+      src: holidayGreetings4,
+      alt: 'Holiday Greetings 4',
+    }
+  ]
+
   import newsletter1 from '$lib/images/newsletter1.png'
   import newsletter2 from '$lib/images/newsletter2.png'
   import newsletter3 from '$lib/images/newsletter3.png'
+
+  const newsletterImages = [
+    {
+      id: 36,
+      src: newsletter1,
+      alt: 'Newsletter 1',
+    },
+    {
+      id: 37,
+      src: newsletter2,
+      alt: 'Holiday Greetings 2',
+    },
+    {
+      id: 38,
+      src: newsletter3,
+      alt: 'Holiday Greetings 3',
+    }
+  ]
+
+  import Lightbox from './Lightbox.svelte'
 </script>
 
 <div class="mx-auto max-w-2xl text-center">
   <h1>work</h1>
 
-  <div class="flex flex-col justify-center pt-12 text-left">
+  <div class="flex flex-col justify-center text-left">
+    <Lightbox
+      images={eventMarketingImages}
+      title={"Hudl Event Marketing"}
+      description={"Event branding (naming and creative direction), marketing strategy, copywriting, logistics coordination and production work."}
+      link={"Hudl"}
+      linkUrl={"https://www.hudl.com"}
+    />
 
-    <div class="p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={eventMarketing1} alt="Hudl Event Marking 1" class="rounded-tl">
-        <img src={eventMarketing2} alt="Hudl Event Marking 2">
-        <img src={eventMarketing3} alt="Hudl Event Marking 3">
-        <img src={eventMarketing4} alt="Hudl Event Marking 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Hudl Event Marketing</h2>
-        <a href="https://www.hudl.com" target="_blank">Hudl</a>
-        <p>
-          Event branding (naming and creative direction), marketing strategy,
-          copywriting, logistics coordination and production work.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={productMarketingImages}
+      title={"Hudl Product Marketing"}
+      description={"Creative concept and web/digital ad copy for Hudl Focus and Hudl for volleyball feature release."}
+      link={"Hudl"}
+      linkUrl={"https://www.hudl.com"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={productMarketing1} alt="Hudl Product Marking 1" class="rounded-tl">
-        <img src={productMarketing2} alt="Hudl Product Marking 2">
-        <img src={productMarketing3} alt="Hudl Product Marking 3">
-        <img src={productMarketing4} alt="Hudl Product Marking 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Hudl Product Marketing</h2>
-        <a href="https://www.hudl.com" target="_blank">Hudl</a>
-        <p>
-          Creative concept and web/digital ad copy for Hudl Focus and Hudl for
-          volleyball feature release.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={papillionSanitationImages}
+      title={"Your Cart Plays a Part Campaign"}
+      description={"Creative concept and copywriting for video, print and digital ads, educational videos, direct mailers and website."}
+      link={"Papillion Sanitation"}
+      linkUrl={"https://papillion-sanitation.com/yourcartplaysapart/"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={papillionSanitation1} alt="Papillion Sanitation 1" class="rounded-tl">
-        <img src={papillionSanitation2} alt="Papillion Sanitation 2">
-        <img src={papillionSanitation3} alt="Papillion Sanitation 3">
-        <img src={papillionSanitation4} alt="Papillion Sanitation 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Your Cart Plays a Part Campaign</h2>
-        <a href="https://papillion-sanitation.com/yourcartplaysapart/" target="_blank">Papillion Sanitation</a>
-        <p>
-          Creative concept and copywriting for video, print and digital ads,
-          educational videos, direct mailers and website.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={paymentSpringImages}
+      title={"Content Marketing and Social Media"}
+      description={"Content and social media strategy and implementation."}
+      link={"PaymentSpring"}
+      linkUrl={"https://paymentspring.com/"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={paymentSpring1} alt="Payment Spring 1" class="rounded-tl">
-        <img src={paymentSpring2} alt="Payment Spring 2">
-        <img src={paymentSpring3} alt="Payment Spring 3">
-        <img src={paymentSpring4} alt="Payment Spring 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Content Marketing and Social Media</h2>
-        <a href="https://paymentspring.com/" target="_blank">PaymentSpring</a>
-        <p>
-          Content and social media strategy and implementation.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={firespringWebsiteImages}
+      title={"Website"}
+      description={"Copywriting."}
+      link={"Firespring"}
+      linkUrl={"https://firespring.com/"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={firespring1} alt="Firespring Website 1" class="rounded-tl">
-        <img src={firespring2} alt="Firespring Website 2">
-        <img src={firespring3} alt="Firespring Website 3">
-        <img src={firespring4} alt="Firespring Website 4">
-        <img src={firespring5} alt="Firespring Website 5" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Website</h2>
-        <a href="https://firespring.com/" target="_blank">Firespring</a>
-        <p>
-          Copywriting.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={stateMuseumImages}
+      title={"Direct Mailer"}
+      description={"Creative concept, direction and copywriting."}
+      link={"UNL State Museum"}
+      linkUrl={"https://museum.unl.edu/"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={stateMuseum1} alt="UNL State Museum 1" class="rounded-tl">
-        <img src={stateMuseum2} alt="UNL State Museum 2" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Direct Mailer</h2>
-        <a href="https://museum.unl.edu/" target="_blank">UNL State Museum</a>
-        <p>
-          Creative concept, direction and copywriting.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={sandwichCampaignImages}
+      title={"Sandwich Campaign"}
+      description={"Copy for mailer, landing page and follow-up emails."}
+      link={"Firespring"}
+      linkUrl={"https://firespring.com/"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={sandwichCampaign1} alt="Sandwich Campaign 1" class="rounded-tl">
-        <img src={sandwichCampaign2} alt="Sandwich Campaign 2">
-        <img src={sandwichCampaign3} alt="Sandwich Campaign 3">
-        <img src={sandwichCampaign4} alt="Sandwich Campaign 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Sandwich Campaign</h2>
-        <a href="https://firespring.com/" target="_blank">Firespring</a>
-        <p>
-          Copy for mailer, landing page and follow-up emails.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={vikingCylindersImages}
+      title={"Exchange Program Materials"}
+      description={"Copy for brochures, direct mail pieces, door hangers and propane cage signage."}
+      link={"Viking Cylinders"}
+      linkUrl={"https://vikingcylinders.com/"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={vikingCylinders1} alt="Viking Cylinders 1" class="rounded-tl">
-        <img src={vikingCylinders2} alt="Viking Cylinders 2">
-        <img src={vikingCylinders3} alt="Viking Cylinders 3">
-        <img src={vikingCylinders4} alt="Viking Cylinders 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Exchange Program Materials</h2>
-        <a href="https://vikingcylinders.com/" target="_blank">Viking Cylinders</a>
-        <p>
-          Copy for brochures, direct mail pieces, door hangers and propane cage signage.
-        </p>
-      </div>
-    </div>
+    <Lightbox
+      images={holidayGreetingsImages}
+      title={"Holiday Greeting 2015"}
+      description={"Creative concept and copywriting for printed holiday card and digital greeting."}
+      link={"Firespring"}
+      linkUrl={"https://firespring.com/"}
+    />
 
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={holidayGreetings1} alt="Holiday Greetings 1" class="rounded-tl">
-        <img src={holidayGreetings2} alt="Holiday Greetings 2">
-        <img src={holidayGreetings3} alt="Holiday Greetings 3">
-        <img src={holidayGreetings4} alt="Holiday Greetings 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Holiday Greeting 2015</h2>
-        <a href="https://Firespring.com/" target="_blank">Firespring</a>
-        <p>
-          Creative concept and copywriting for printed holiday card
-          and digital greeting.
-        </p>
-      </div>
-    </div>
-
-    <div class="mt-8 p-2 shadow rounded">
-      <div class="flex justify-center gap-x-2">
-        <img src={newsletter1} alt="Newsletter 1" class="rounded-tl">
-        <img src={newsletter2} alt="Newsletter 2">
-        <img src={newsletter3} alt="Newsletter 4" class="rounded-tr">
-      </div>
-      <div>
-        <h2>Monthly Newsletter</h2>
-        <a href="https://Firespring.com/" target="_blank">Firespring</a>
-        <p>
-          Copywriting.
-        </p>
-      </div>
-    </div>
-
+    <Lightbox
+      images={newsletterImages}
+      title={"Monthly Newsletter"}
+      description={"Copywriting."}
+      link={"Firespring"}
+      linkUrl={"https://firespring.com/"}
+    />
   </div>
 </div>
-
-<style lang="postcss">
-  h2 {
-    @apply text-lg sm:text-xl;
-  }
-
-  img {
-    @apply object-cover flex-1 w-full h-28 sm:h-40;
-  }
-
-  p {
-    @apply text-justify text-sm sm:text-base
-  }
-</style>
