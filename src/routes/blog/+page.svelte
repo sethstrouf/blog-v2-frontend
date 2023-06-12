@@ -11,8 +11,8 @@
   }
 </script>
 
-<div class="bg-white" >
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="bg-white -mt-12" >
+  <div class="mx-auto max-w-5xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-4xl">
       <h2 class="hidden">blog</h2>
       <div class="mt-12 space-y-20 lg:mt-20 lg:space-y-20">
