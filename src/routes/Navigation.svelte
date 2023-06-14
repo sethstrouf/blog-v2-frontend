@@ -32,7 +32,7 @@
       <a href="/about" aria-current={path === '/about' && 'page'} class="block border-l-4 border-transparent py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">about</a>
       <a href="/work" aria-current={path === '/work' && 'page'} class="block border-l-4 border-transparent py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">work</a>
       <a href="/contact" aria-current={path === '/contact' && 'page'} class="block border-l-4 border-transparent py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">contact</a>
-      <a href="/" aria-current={path === '/' && 'page'} class="block border-l-4 border-transparent py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">blog</a>
+      <a href="/" data-sveltekit-preload-data aria-current={path === '/' && 'page'} class="block border-l-4 border-transparent py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">blog</a>
     </div>
   </div>
 </nav>

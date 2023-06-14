@@ -7,7 +7,7 @@
 <div class="flex flex-col h-screen justify-between">
   <NavigationBar />
 
-  <main class="mb-auto bg-white py-20">
+  <main class="mb-auto bg-white py-12 lg:py-20">
     <slot />
   </main>
 
