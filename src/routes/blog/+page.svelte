@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { PUBLIC_API_HOST } from '$env/static/public';
   import type { PageData } from './$types'
 
   export let data: PageData
@@ -19,15 +20,19 @@
         {#each data.posts as post (post.id)}
           <article class="relative isolate flex flex-col gap-8 lg:flex-row text-center lg:text-left lg:items-center lg:justify-center">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-              <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
+              {#if post.attributes.images[0]}
+                <a href="/blog/{post.id}" data-sveltekit-preload-data>
+                  <img src={`${PUBLIC_API_HOST}/${post.attributes.images[0].url}`} alt={post.attributes.images[0].filename} class="absolute h-full w-full hover:brightness-90 rounded-3xl border-2 border-indigo-800 object-cover">
+                </a>
+              {/if}
             </div>
             <div>
               <div class="flex justify-center text-xs lg:justify-start">
-                <time class="text-gray-500">{getDate(new Date(post.attributes.updated_at))}</time>
+                <time class="text-gray-500">{getDate(new Date(post.attributes.created_at))}</time>
               </div>
               <div class="relative">
                 <h2 class="mt-2">
-                  <a href="/blog/{post.id}">
+                  <a href="/blog/{post.id}" data-sveltekit-preload-data>
                     {post.attributes.title}
                   </a>
                 </h2>

@@ -18,7 +18,7 @@
           <a href="/about" aria-current={path === '/about' && 'page'} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base lg:text-lg font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">about</a>
           <a href="/work" aria-current={path === '/work' && 'page'} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base lg:text-lg font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">work</a>
           <a href="/contact" aria-current={path === '/contact' && 'page'} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base lg:text-lg font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">contact</a>
-          <a href="/" aria-current={path === '/' && 'page'} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base lg:text-lg font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">blog</a>
+          <a href="/" data-sveltekit-preload-data aria-current={path === '/' && 'page'} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base lg:text-lg font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">blog</a>
         </div>
       </div>
     </div>
