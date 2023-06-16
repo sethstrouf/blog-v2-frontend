@@ -25,6 +25,12 @@
                   <img src={`${PUBLIC_API_HOST}/${post.attributes.images[0].url}`} alt={post.attributes.images[0].filename} class="absolute h-full w-full hover:brightness-90 rounded-3xl border-2 border-valencia-800 object-cover">
                 </a>
               </div>
+            {:else}
+              <div class="hidden lg:block relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+                <a href="/blog/{post.id}" data-sveltekit-preload-data>
+                  <div class="absolute h-full w-full" />
+                </a>
+              </div>
             {/if}
             <div>
               <p class="flex justify-center text-xs lg:justify-start text-gray-500"><FormattedDate date={post.attributes.created_at}/></p>
