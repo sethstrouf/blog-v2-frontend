@@ -2,7 +2,7 @@
   let currentYear = new Date().getFullYear()
 </script>
 
-<footer class="bg-white">
+<footer class="border-t">
   <div class="mx-auto max-w-7xl overflow-hidden px-6 py-4 sm:py-8 lg:px-8">
     <div class="flex justify-center space-x-10 sm:space-x-10">
       <a href="https://www.linkedin.com/in/hannahrbauer/" class="text-gray-400 hover:text-gray-500">

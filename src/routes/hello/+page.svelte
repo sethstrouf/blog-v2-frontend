@@ -3,7 +3,7 @@
 
   <div class="flex flex-col sm:flex-row justify-center pt-12 sm:space-x-12">
     <div class="sm:text-right sm:w-1/2">
-      <h2>marketing strategy</h2>
+      <h2 class="text-turquoise-700 underline">marketing strategy</h2>
       <ul>
         <li>customer acquisition </li>
         <li>go-to-market planning</li>
@@ -14,7 +14,7 @@
     </div>
 
     <div class="pt-12 sm:pt-0 sm:text-left sm:w-1/2">
-      <h2>branding & creative</h2>
+      <h2 class="text-turquoise-700 underline">branding & creative</h2>
       <ul>
         <li>event marketing</li>
         <li>brand architecture & archetypes</li>

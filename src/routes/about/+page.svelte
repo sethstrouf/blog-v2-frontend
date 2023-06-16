@@ -12,7 +12,7 @@
       <ul class="-my-8 divide-y divide-gray-100">
         <li class="py-8">
           <dl class="relative flex flex-wrap gap-x-3">
-            <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
+            <dd class="w-full flex-none text-lg font-semibold tracking-tight text-turquoise-700">
               education
             </dd>
             <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Hannah is a life-long Nebraskan with a liberal arts degree in journalism & media and philosophy.</dd>
@@ -20,7 +20,7 @@
         </li>
         <li class="py-8">
           <dl class="relative flex flex-wrap gap-x-3">
-            <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
+            <dd class="w-full flex-none text-lg font-semibold tracking-tight text-turquoise-700">
               interests
             </dd>
             <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">When not making marketing magic, her interests include distance running, pastries, yoga, feminism, traveling and her cats.</dd>
@@ -28,7 +28,7 @@
         </li>
         <li class="py-8">
           <dl class="relative flex flex-wrap gap-x-3">
-            <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
+            <dd class="w-full flex-none text-lg font-semibold tracking-tight text-turquoise-700">
               gallup strengths
             </dd>
             <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">

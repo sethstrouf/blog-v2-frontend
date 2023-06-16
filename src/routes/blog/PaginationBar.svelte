@@ -2,15 +2,15 @@
   export let meta: { page: number, prev: number, next: number, from: number, to: number, pages: number, count: number }
 </script>
 
-<div class="flex items-center justify-between bg-white px-4 py-3 sm:px-6" >
+<div class="flex items-center justify-between px-4 py-3 sm:px-6" >
   <nav class="flex flex-1 justify-between sm:hidden" data-sveltekit-reload>
     <a href={`/blog?page=${meta.prev}`} data-sveltekit-preload-data>
-      <button disabled={meta.prev == null} class="disabled:hidden relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+      <button disabled={meta.prev == null} class="disabled:hidden relative inline-flex items-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
         Previous
       </button>
     </a>
     <a href={`/blog?page=${meta.next}`} data-sveltekit-preload-data>
-      <button disabled={meta.next == null} class="disabled:hidden relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+      <button disabled={meta.next == null} class="disabled:hidden relative ml-3 inline-flex items-center rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
         Next
       </button>
     </a>
@@ -37,7 +37,7 @@
             </svg>
           </button>
         </a>
-        <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:outline-offset-0" -->
+        <!-- Current: "z-10 bg-turquoise-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-turquoise-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:outline-offset-0" -->
         {#each Array(meta.pages) as _, page}
           <a href={`/blog?page=${page + 1}`} data-sveltekit-preload-data aria-current={meta.page == page + 1 && 'page'} class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 md:inline-flex">{page + 1}</a>
         {/each}
@@ -56,6 +56,6 @@
 
 <style lang="postcss">
   [aria-current="page"] {
-    @apply relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+    @apply relative z-10 inline-flex items-center bg-turquoise-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-turquoise-600;
   }
 </style>

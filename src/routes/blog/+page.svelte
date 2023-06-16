@@ -10,7 +10,7 @@
   const meta = data.posts.meta
 </script>
 
-<div class="bg-white" >
+<div>
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-4xl">
       <h2 class="hidden">blog</h2>
@@ -22,7 +22,7 @@
             {#if post.attributes.images.length}
               <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
                 <a href="/blog/{post.id}" data-sveltekit-preload-data>
-                  <img src={`${PUBLIC_API_HOST}/${post.attributes.images[0].url}`} alt={post.attributes.images[0].filename} class="absolute h-full w-full hover:brightness-90 rounded-3xl border-2 border-indigo-800 object-cover">
+                  <img src={`${PUBLIC_API_HOST}/${post.attributes.images[0].url}`} alt={post.attributes.images[0].filename} class="absolute h-full w-full hover:brightness-90 rounded-3xl border-2 border-valencia-800 object-cover">
                 </a>
               </div>
             {/if}
