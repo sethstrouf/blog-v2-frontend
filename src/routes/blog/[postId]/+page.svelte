@@ -29,14 +29,15 @@
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
       <div class="lg:pr-4 mx-auto">
-        <figure class="relative block lg:hidden">
-          {#each [post.attributes.images[index]] as image (index)}
-            <img src={`${PUBLIC_API_HOST}${image?.url}`} alt={image?.filename} class="h-80 w-80 object-cover rounded-3xl border-2 border-indigo-800" />
-          {/each}
-          <button on:click={previous} class="absolute top-32 left-2 text-6xl text-white hover:text-indigo-200 font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">&lt;</button><br>
-          <button on:click={next} class="absolute top-32 right-2 text-6xl text-white hover:text-indigo-200 font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">&gt;</button>
-        </figure>
-
+        {#if post.attributes.images.length}
+          <figure class="relative block lg:hidden">
+            {#each [post.attributes.images[index]] as image (index)}
+              <img src={`${PUBLIC_API_HOST}${image?.url}`} alt={image?.filename} class="h-80 w-80 object-cover rounded-3xl border-2 border-indigo-800" />
+            {/each}
+            <button on:click={previous} disabled={post.attributes.images[index - 1]  == undefined} class="disabled:hidden absolute top-32 left-2 text-6xl text-white hover:text-indigo-200 font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">&lt;</button><br>
+            <button on:click={next} disabled={post.attributes.images[index + 1]  == undefined} class="disabled:hidden absolute top-32 right-2 text-6xl text-white hover:text-indigo-200 font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">&gt;</button>
+          </figure>
+        {/if}
         {#each post.attributes.images as image}
           <figure class="relative hidden lg:block mt-2">
             <img src={`${PUBLIC_API_HOST}${image?.url}`} alt={image?.filename} class="mb-12 h-80 w-80 object-cover rounded-3xl border-2 border-indigo-800"/>

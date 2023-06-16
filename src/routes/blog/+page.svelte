@@ -19,13 +19,13 @@
         <div class="mt-12" />
         {#each posts as post (post.id)}
           <article class="relative isolate mb-20 flex flex-col gap-8 lg:flex-row text-center lg:text-left lg:items-center lg:justify-center">
-            <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-              {#if post.attributes.images[0]}
+            {#if post.attributes.images.length}
+              <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
                 <a href="/blog/{post.id}" data-sveltekit-preload-data>
                   <img src={`${PUBLIC_API_HOST}/${post.attributes.images[0].url}`} alt={post.attributes.images[0].filename} class="absolute h-full w-full hover:brightness-90 rounded-3xl border-2 border-indigo-800 object-cover">
                 </a>
-              {/if}
-            </div>
+              </div>
+            {/if}
             <div>
               <p class="flex justify-center text-xs lg:justify-start text-gray-500"><FormattedDate date={post.attributes.created_at}/></p>
               <div class="relative">
