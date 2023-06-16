@@ -2,18 +2,12 @@
   import { PUBLIC_API_HOST } from '$env/static/public';
   import type { PageData } from './$types'
 	import PaginationBar from './PaginationBar.svelte';
+  import FormattedDate from '$lib/FormattedDate.svelte';
 
   export let data: PageData
 
   const posts = data.posts.data
   const meta = data.posts.meta
-
-  const getDate = (date: Date) => {
-    const month = date.toLocaleString('default', { month: 'long' });
-    const day = date.getDate().toString().padStart(2, "0");
-
-    return `${month} ${day}, ${date.getFullYear()}`
-  }
 </script>
 
 <div class="bg-white" >
@@ -33,9 +27,7 @@
               {/if}
             </div>
             <div>
-              <div class="flex justify-center text-xs lg:justify-start">
-                <time class="text-gray-500">{getDate(new Date(post.attributes.created_at))}</time>
-              </div>
+              <p class="flex justify-center text-xs lg:justify-start text-gray-500"><FormattedDate date={post.attributes.created_at}/></p>
               <div class="relative">
                 <h2 class="mt-2">
                   <a href="/blog/{post.id}" data-sveltekit-preload-data>
