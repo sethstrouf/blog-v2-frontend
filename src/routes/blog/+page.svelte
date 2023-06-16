@@ -32,7 +32,7 @@
                 </a>
               </div>
             {/if}
-            <div>
+            <div class="w-full">
               <p class="flex justify-center text-xs lg:justify-start text-gray-500"><FormattedDate date={post.attributes.created_at}/></p>
               <div class="relative">
                 <h2 class="mt-2">
