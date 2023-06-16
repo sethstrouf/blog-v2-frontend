@@ -45,7 +45,7 @@
 
 <!-- Comment Section -->
 {#each comments as comment (comment.id.toString())}
-  <div transition:fade="{{ duration: 2000 }}" class="mt-6 bg-gray-200 rounded-lg p-2">
+  <div transition:fade class="mt-6 bg-gray-200 rounded-lg p-2">
     <div class="relative">
       <div class="flex justify-between">
         <h3 class="text-base font-light leading-6 text-gray-900">
